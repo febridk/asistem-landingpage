@@ -129,6 +129,52 @@ body::before {
     background-image: url('../images/card/corner-yellow-dark.svg');
 }
 
+#page-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+    background: var(--primary-blue);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 50px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 30px 0px rgba(56, 207, 245, 0.35);
+}
+
+#page-up i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#page-up:hover {
+    background: var(--secodnary-blue);
+    box-shadow: 0px 0px 20px 0px rgba(47, 179, 212, 0.35);
+}
+
+#page-up:hover i {
+    color: #fff;
+    top: 10px;
+}
+
 .bg-blue {
     color: var(--primary-white);
     background-color: var(--primary-blue);
@@ -332,7 +378,7 @@ body::before {
 
 .portfolio {
     margin-top: 100px;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .portfolio .card {
@@ -352,32 +398,66 @@ body::before {
 }
 
 .portfolio-rate {
-    margin-top: 100px;
+    margin-top: 30px;
     padding-top: 100px;
-    margin-bottom: 100px;
 }
 
-.portfolio-rate .card {
+.portfolio-rate .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-rate .swiper-slide {
+    width: 35%;
+    padding-bottom: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.portfolio-rate .swiper-slide:nth-child(2n) {
+    width: 35%;
+}
+
+.portfolio-rate .swiper-slide:nth-child(3n) {
+    width: 35%;
+}
+
+.portfolio-rate .swiper-pagination {
+    text-align: left;
+}
+
+.portfolio-rate .swiper-slide .card {
     margin-top: 2rem;
     border-radius: 10px;
     border: 2px solid #dddddd;
 }
 
-.portfolio-rate .card.active {
+.portfolio-rate .swiper-slide .card.active {
     border: 2px solid var(--primary-blue);
 }
 
-.portfolio-rate .card .profile {
+.portfolio-rate .swiper-slide .card .profile {
     margin: 1rem 0;
 }
 
-.portfolio-rate .card .profile .description p {
+.portfolio-rate .swiper-slide .card .profile .description p {
     font-size: 14px;
     margin-top: -5px;
     color: var(--primary-grey);
 }
 
 .contactus {
+    margin-top: 50px;
     margin-bottom: -90px;
     padding-top: 100px;
 }
@@ -395,14 +475,14 @@ body::before {
     border-color: transparent;
     color: var(--primary-white);
     background-color: var(--primary-blue);
-    box-shadow: 0px 15px 30px 0px rgba(245, 56, 56, 0.35);
+    box-shadow: 0px 15px 30px 0px rgba(56, 207, 245, 0.35);
 }
 
 .contactus .cta-contact:hover, .contactus .cta-contact:not(:disabled):not(.disabled):active {
     border-color: transparent;
     color: var(--primary-white);
     background-color: var(--secodnary-blue);
-    box-shadow: 0 15px 30px 0px rgba(245, 56, 56, 0.35);
+    box-shadow: 0px 15px 30px 0px rgba(56, 207, 245, 0.35);
 }
 
 footer {
