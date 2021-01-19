@@ -22,7 +22,7 @@ body {
     background-color: var(--primary-white);
 }
 
-body::after {
+body::before {
     top: -30px;
     content: "";
     left: 230px;
@@ -142,6 +142,24 @@ body::after {
     background: transparent!important;
 }
 
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../images/icons/hamburgermenu.svg');
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-light .navbar-brand img {
+    width: 100%;
+    height: auto;
+    max-width: 240px;
+}
+
 .navbar .nav-item {
     position: relative;
 }
@@ -235,6 +253,12 @@ body::after {
 .about {
     margin-top: 300px;
     padding-top: 50px;
+}
+
+.about .about-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
 }
 
 .about .service-list li {
@@ -425,4 +449,54 @@ footer .navigation li a:hover {
 footer .copyright {
     color: var(--primary-grey);
     opacity: 50%;
+}
+
+@media (max-width: 767px) {
+    .section-title {
+        margin-top: 1rem;
+    }
+    .navbar .nav-item {
+        margin-top: 1rem;
+    }
+    .navbar .nav-item .nav-link::after {
+        left: 10px;
+    }
+    .navbar .nav-item .nav-link:hover::after {
+        width: 5%;
+    }
+    .home {
+        margin-top: 5rem;
+    }
+    .home .image-home {
+        display: none;
+    }
+    .about {
+        margin-top: 100px;
+    }
+    .portfolio {
+        margin-top: 50px;
+    }
+    .portfolio-rate {
+        margin-bottom: 0;
+    }
+    .contactus .section-title {
+        font-size: 28px;
+        text-align: center;
+    }
+    footer .row .col-12 {
+        order: 13;
+        margin-top: 2rem;
+    }
+    footer .navigation h6 {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    body {
+        overflow-x: hidden
+    }
+    .navbar-light .navbar-brand img {
+        padding: 0 15px;
+    }
 }
