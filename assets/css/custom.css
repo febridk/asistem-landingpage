@@ -13,7 +13,8 @@
     --background-grey: #f7f7f7;
 }
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
 }
 
@@ -275,7 +276,8 @@ body::before {
     box-shadow: 0px 15px 30px 0px rgba(245, 56, 56, 0.35);
 }
 
-.home .btn-cta:hover, .home .btn-cta:not(:disabled):not(.disabled):active {
+.home .btn-cta:hover,
+.home .btn-cta:not(:disabled):not(.disabled):active {
     border-color: transparent;
     color: var(--primary-white);
     background-color: var(--secondary-yellow);
@@ -354,7 +356,8 @@ body::before {
     margin-bottom: -5rem;
 }
 
-.service .cta-service-1:hover, .service .cta-service-1:not(:disabled):not(.disabled):active {
+.service .cta-service-1:hover,
+.service .cta-service-1:not(:disabled):not(.disabled):active {
     opacity: 75%;
     box-shadow: none;
     border-color: transparent;
@@ -369,7 +372,8 @@ body::before {
     margin-bottom: -5rem;
 }
 
-.service .cta-service-2:hover, .service .cta-service-2:not(:disabled):not(.disabled):active {
+.service .cta-service-2:hover,
+.service .cta-service-2:not(:disabled):not(.disabled):active {
     opacity: 75%;
     box-shadow: none;
     border-color: transparent;
@@ -478,7 +482,8 @@ body::before {
     box-shadow: 0px 15px 30px 0px rgba(56, 207, 245, 0.35);
 }
 
-.contactus .cta-contact:hover, .contactus .cta-contact:not(:disabled):not(.disabled):active {
+.contactus .cta-contact:hover,
+.contactus .cta-contact:not(:disabled):not(.disabled):active {
     border-color: transparent;
     color: var(--primary-white);
     background-color: var(--secodnary-blue);
@@ -579,4 +584,19 @@ footer .copyright {
     .navbar-light .navbar-brand img {
         padding: 0 15px;
     }
+}
+
+.develop-by-febridk {
+    margin-top: 1.5rem!important;
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+    z-index: 999;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.develop-by-febridk:hover {
+    transform: translateY(-5px);
 }
