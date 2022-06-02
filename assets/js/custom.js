@@ -3,7 +3,7 @@ $('#partnerships').animateNumber({ number: 126 }, 2000);
 $('#relations').animateNumber({ number: 231 }, 2000);
 $('#certificates').animateNumber({ number: 54 }, 2000);
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper', {
     slidesPerView: 2.5,
     spaceBetween: 30,
     freeMode: true,
@@ -21,14 +21,14 @@ var swiper = new Swiper('.swiper-container', {
     }
 });
 
-$(window).scroll(function () {
+$(window).scroll(function() {
     if ($(this).scrollTop() >= 50) {
         $('#page-up').fadeIn(200);
     } else {
         $('#page-up').fadeOut(200);
     }
 });
-$('#page-up').click(function () {
+$('#page-up').click(function() {
     $('body,html').animate({
         scrollTop: 0
     }, 300);
